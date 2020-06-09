@@ -1,12 +1,9 @@
 // NOTE: This solution pattern template is meant to be used as a starting point for development
 // <-- START OF SOLUTION PATTERN GENERAL INFO -->
-// Update the component versions for each release (Fuse example below)
-// Component versions
-//:fuse-version: 7.5
 
-// URLs (Fuse example included to show how this works with the component version attribute from above)
-//:fuse-documentation-url: https://access.redhat.com/documentation/en-us/red_hat_fuse/{fuse-version}/
+// URLs
 :openshift-console-url: {openshift-host}/dashboards
+:operatorhub-url: {openshift-host}/operatorhub
 
 //attributes
 :title: Using Serverless on OpenShift
@@ -33,7 +30,7 @@ Red Hat® OpenShift® Serverless is a service based on the open source Knative p
 // <-- END OF SOLUTION PATTERN GENERAL INFO -->
 
 // <-- START OF SOLUTION PATTERN TASKS -->
-[time=5]
+[time=4]
 [id='title-of-task']
 == Install the serverless operator
 
@@ -41,14 +38,20 @@ The OperatorHub is where you can find a catalog of available Operators to instal
 
 Follow these steps to install serverless.
 
-. Go to the OperatorHub and search for the OpenShift Serverless Operator.
-.. You can easily search for the Operator you want by using the filter at the top of the page.
-. Complete the installation flow to install Serverless on your cluster.
-
+. Go to link:{operatorhub-url}[OperatorHub, window="_blank"].
+. Use the filter at the top of the page to search for
++
+[subs="attributes+", id="serverless-operator-name"]
+----
+OpenShift Serverless Operator
+----
+. Click the *OpenShift Serverless Operator* card.
+. Click the *Install* button on the additional information page.
+. Complete the form and click *Subscribe*.
 
 [type=verification]
 ====
-Did it work?
+Go to your OpenShift project and select *Installed Operators* from the vertical navigation menu on the left side of the page. Do you see the OpenShift Serverless Operator listed?
 ====
 
 [type=verificationFail]
