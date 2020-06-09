@@ -17,6 +17,11 @@
 [id='1-using-serverless-on-openshift']
 = {title}
 
+// word count that fits best is 15-22, with 20 really being the sweet spot. Character count for that space would be 100-125
+Learn how to install the serverless operator and create a serverless application.
+
+Red Hat® OpenShift® Serverless is a service based on the open source Knative project. It provides an enterprise-grade serverless platform which brings portability and consistency across hybrid and multi-cloud environments.
+
 
 [type=walkthroughResource,serviceName=openshift]
 .Red Hat OpenShift
@@ -32,13 +37,14 @@
 [id='title-of-task']
 == Install the serverless operator
 
-// Subtasks are not required.
-// For simple walkthroughs, create your procedure under tasks.
+The OperatorHub is where you can find a catalog of available Operators to install on your cluster.
 
-=== Subtask Title
+Follow these steps to install serverless.
 
-. Do first step.
-. Do second step.
+. Go to the OperatorHub and search for the OpenShift Serverless Operator.
+.. You can easily search for the Operator you want by using the filter at the top of the page.
+. Complete the installation flow to install Serverless on your cluster.
+
 
 [type=verification]
 ====
@@ -50,7 +56,7 @@ Did it work?
 
 [time=5]
 [id='title-of-task']
-== Explore serverless applications
+== Create a serverless application
 
 // Subtasks are not required.
 // For simple walkthroughs, create your procedure under tasks.
