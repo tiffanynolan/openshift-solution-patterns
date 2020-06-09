@@ -30,7 +30,27 @@
 // <-- START OF SOLUTION PATTERN TASKS -->
 [time=5]
 [id='title-of-task']
-== Task Title
+== Install the serverless operator
+
+// Subtasks are not required.
+// For simple walkthroughs, create your procedure under tasks.
+
+=== Subtask Title
+
+. Do first step.
+. Do second step.
+
+[type=verification]
+====
+Did it work?
+====
+
+[type=verificationFail]
+{standard-fail-text}
+
+[time=5]
+[id='title-of-task']
+== Explore serverless applications
 
 // Subtasks are not required.
 // For simple walkthroughs, create your procedure under tasks.
